@@ -26,4 +26,4 @@ https://stockapp-mu.vercel.app
 
 ## Usage/Examples
 
-<img src="./public/hero.png"/>
+<img src="./public/stockapppng.png"/>
