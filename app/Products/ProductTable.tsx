@@ -63,8 +63,6 @@ const multiSelectFilter: FilterFn<unknown> = (
 	return filterValue.length === 0 || lowercaseFilterValues.includes(rowValue);
 };
 
-console.log("multiSelectFilter", multiSelectFilter);
-
 export function ProductTable<TData, TValue>({
 	columns,
 	data,
@@ -79,8 +77,6 @@ export function ProductTable<TData, TValue>({
 
 	const [selectedStatuses, setSelectedStatuses] = useState<string[]>([]);
 	const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-
-	console.log(selectedCategories);
 
 	// Combined useEffect for both filters
 	useEffect(() => {
@@ -108,7 +104,6 @@ export function ProductTable<TData, TValue>({
 				});
 			}
 
-			console.log("New Column Filters:", newFilters);
 			return newFilters;
 		});
 

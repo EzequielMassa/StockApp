@@ -57,7 +57,6 @@ export const useProductStore = create<ProductState>((set) => ({
 		try {
 			// Simulate the update process with a delay
 			await new Promise((resolve) => setTimeout(resolve, 1000));
-			console.log(updatedProduct);
 
 			// Update the product in the state
 			set((state) => ({
